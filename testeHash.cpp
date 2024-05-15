@@ -302,13 +302,15 @@ int main(){
     }
     hash *hashTable = novoHash();
 
-    cout << "amogus\n Tamanho da hash table: " << hashTable->getSize() << " | Espacos ocupados: " << hashTable->getOcupados();
+    cout << "amogus\n Tamanho da hash table: " << hashTable->getSize() << " | Espacos ocupados: " << hashTable->getOcupados() << endl;
 
     op = 2;
     string nome;
     produto *temp;
     float quantidade;
     while(op != 0){
+        system("pause");
+        system("cls");
         cout << endl << endl << "O que voce deseja fazer?\n1 - Inserir produto\n2 - Buscar nome cadastrado\n3 - Reiniciar a tabela\n4 - Mostrar todos os produtos cadastrados\n5 - Vender Produto\n6 - Adicionar Estoque\n0 - Sair\nR: ";
         cin >> op;
         switch(op){
