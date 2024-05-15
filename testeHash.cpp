@@ -279,7 +279,7 @@ int string2int(string str){ //Recebe uma string, retorna seu equivalente numéri
 
 hash *novoHash(){
     int TAMANHO_MAX;
-    cout << endl << endl << "Qual sera o tamanho maximo da hash table?\nR: ";
+    cout << endl << endl << "Qual sera o tamanho maximo da hash table?\n(Recomendam-se numeros primos grandes. Sugestao: 101)\nR: ";
     cin >> TAMANHO_MAX;
 
     hash *tabela = new hash(TAMANHO_MAX);
@@ -302,7 +302,7 @@ int main(){
     }
     hash *hashTable = novoHash();
 
-    cout << "AMO\nGAS\n " << hashTable->getSize() << " | " << hashTable->getOcupados();
+    cout << "amogus\n Tamanho da hash table: " << hashTable->getSize() << " | Espacos ocupados: " << hashTable->getOcupados();
 
     op = 2;
     string nome;
